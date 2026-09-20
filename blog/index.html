@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- Metadata, OpenGraph and Schema.org -->
+
+
+
+
+<!-- Standard metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>
+  
+  
+    
+      Blog | Wei  Xiong
+    
+  
+</title>
+<meta name="author" content="Wei  Xiong">
+<meta name="description" content="Wei Xiong is a Member of Technical Staff at OpenAI on the RL / Frontier Team. Research, writing, and open-source work in reinforcement learning and LLM post-training.">
+
+  <meta name="keywords" content="Wei Xiong, OpenAI, reinforcement learning, LLM post-training, UIUC">
+
+
+
+
+
+
+  <!-- OpenGraph -->
+  <meta property="og:site_name" content="Wei  Xiong">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Wei  Xiong | Blog">
+  <meta property="og:url" content="https://weixiongml-bot.github.io/blog/">
+  <meta property="og:description" content="Wei Xiong is a Member of Technical Staff at OpenAI on the RL / Frontier Team. Research, writing, and open-source work in reinforcement learning and LLM post-training.">
+  
+    
+    
+    <meta property="og:image" content="https://weixiongml-bot.github.io/assets/img/wei-xiong.jpeg">
+  
+  <meta property="og:locale" content="en">
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Blog">
+  <meta name="twitter:description" content="Wei Xiong is a Member of Technical Staff at OpenAI on the RL / Frontier Team. Research, writing, and open-source work in reinforcement learning and LLM post-training.">
+  
+    <meta name="twitter:image" content="https://weixiongml-bot.github.io/assets/img/wei-xiong.jpeg">
+  
+  
+
+
+
+  <!-- Schema.org -->
+  
+  
+  
+
+  <script type="application/ld+json">
+    {
+        "author":
+        {
+            "@type": "Person",
+            "name": "Wei  Xiong"
+        },
+        "url": "https://weixiongml-bot.github.io/blog/",
+        "@type": "BlogPosting",
+        "description": "Wei Xiong is a Member of Technical Staff at OpenAI on the RL / Frontier Team. Research, writing, and open-source work in reinforcement learning and LLM post-training.",
+        "headline": "Blog",
+        
+        "sameAs": ["https://scholar.google.com/citations?user=m2-OwQEAAAAJ","https://github.com/weixiongml-bot",null],
+        
+        "name": "Wei  Xiong",
+        "@context": "https://schema.org"
+    }
+  </script>
+
+
+
+<!-- Security: Content Security Policy -->
+<!-- Permissive CSP suitable for academic websites. Allows external images, videos, and common embed services. -->
+<!-- To customize for your needs, see: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;">
+<style>
+  :root {
+    --max-content-width: 960px;
+  }
+</style>
+
+<!-- Tailwind-first core styles -->
+<link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62">
+
+
+
+
+
+
+
+<!-- Icons -->
+
+  
+<!-- Font Awesome -->
+<link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous">
+
+<!-- Academicons -->
+<link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous">
+
+<!-- Scholar Icons -->
+<link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous">
+
+
+
+<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
+
+<!-- Code Syntax Highlighting -->
+<link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
+
+<!-- Styles -->
+
+
+
+
+
+  <link rel="shortcut icon" href="/assets/img/favicon.svg?v=41a1eaac562f40790688c4d17f306df6">
+
+
+
+
+<link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1">
+
+<link rel="canonical" href="https://weixiongml-bot.github.io/blog/">
+
+
+  <!-- Dark Mode -->
+  <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script>
+  <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark">
+  <script>
+    initTheme();
+  </script>
+
+
+
+
+
+
+
+  <!-- Image Features -->
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  <!-- Right-to-left support -->
+  
+
+
+
+
+
+
+
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav sticky-bottom-footer">
+    <!-- Header -->
+    <header>
+  <!-- Nav Bar -->
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+    <div class="container">
+      
+        <a class="navbar-brand title font-weight-lighter" href="/">
+          
+            
+              <span class="font-weight-bold">Wei</span>
+            
+            
+            Xiong
+          
+        </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav">
+        <ul class="navbar-nav navbar-menu-list flex-nowrap">
+          
+
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">Home
+              
+            </a>
+          </li>
+
+          <!-- Other pages -->
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+                <li class="nav-item active">
+                  <a class="nav-link" href="/blog/">Blog
+                    
+                      <span class="sr-only">(current)</span>
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="/misc/">Misc.
+                    
+                  </a>
+                </li>
+              
+            
+          
+          
+          
+            <!-- Toogle theme mode -->
+            <li class="toggle-container">
+              <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme">
+                <i class="fa-half-sun-moon" id="light-toggle-system"></i>
+                <i class="fa-solid fa-moon" id="light-toggle-dark"></i>
+                <i class="fa-solid fa-sun" id="light-toggle-light"></i>
+              </button>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+</header>
+
+
+    <!-- Content -->
+    <div class="container mt-5" role="main">
+      
+        
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">Blog</h1>
+    <p class="post-description"></p>
+  </header>
+
+  <article>
+    <div class="writing-content">
+
+<p>I enjoy taking notes on my research and sharing them with others who are also interested in these areas. Thanks to this habit, I have met many like-minded friends who share similar interests.</p>
+<h2 id="large-language-model">Large language model</h2>
+<ol class="writing-list">
+<li>
+<span class="writing-source">Notion</span><p><a href="https://www.notion.so/Alignment-Guidebook-e5c64df77c0a4b528b7951e87337fa78#17fa7c81f9744a26aa88b2fe033e18c1" rel="external nofollow noopener" target="_blank"> Alignment Guidebook.</a>  </p>
+A comprehensive introduction to the preference learning in LLMs. 
+</li>
+<li>
+<span class="writing-source">Zhihu</span><p><a href="https://zhuanlan.zhihu.com/p/688806682" rel="external nofollow noopener" target="_blank">Why should we do online RLHF/DPO? (in Chinese).</a>  </p>
+A blog about the advantage of online exploration in RLHF. 
+</li>
+<li>
+<span class="writing-source">WeChat</span><p><a href="https://mp.weixin.qq.com/s/ZxFD1yvZA__onE9PTvxWhw" rel="external nofollow noopener" target="_blank">A tutorial of RLHF with LMFlow (Huggingface version).</a>  </p>
+</li>
+</ol>
+<h2 id="reinforcement-learning-theory">Reinforcement learning theory</h2>
+<ol class="writing-list">
+<li>
+<span class="writing-source">PDF note</span><p><a href="/assets/pdf/noterlgfa.pdf">An introduction to eluder coefficient, a unified framework for nearly all known tractable decision-making problems.</a></p>
+</li>
+<li>
+<span class="writing-source">PDF note</span><p><a href="/assets/pdf/note_reduction.pdf"> Note on reduction-based RL</a>
+A short note on eluder coefficient, decoupling coefficient, and decision-estimation coefficient. </p>
+</li>
+<li>
+<span class="writing-source">PDF note</span><p><a href="/assets/pdf/notecontextualbandit.pdf"> Note on non-linear contextual bandit</a>
+An application of eluder coefficient in contextual bandit with general function approximation. </p>
+</li>
+</ol>
+<h2 id="optimization-basis-and-decentralized-optimization">Optimization basis and Decentralized Optimization</h2>
+<ol class="writing-list">
+<li>
+<span class="writing-source">Zhihu</span><p><a href="https://zhuanlan.zhihu.com/p/350822544" rel="external nofollow noopener" target="_blank">A generic framework for first-order stochastic decentralized optimization</a>  </p>
+</li>
+<li>
+<span class="writing-source">Zhihu</span><p><a href="https://zhuanlan.zhihu.com/p/144019379" rel="external nofollow noopener" target="_blank">Analysis of batch gradient descent and stochastic gradient descent (in Chinese)</a>  </p>
+</li>
+</ol>
+<h2 id="multi-armed-bandit-basis-and-multi-player-multi-armed-bandit">Multi-armed bandit basis and Multi-player multi-armed bandit</h2>
+<ol class="writing-list">
+<li>
+<span class="writing-source">Zhihu</span><p><a href="https://zhuanlan.zhihu.com/p/76283652" rel="external nofollow noopener" target="_blank">Bandits with stochastic rewards (in Chinese)</a>  </p>
+</li>
+<li>
+<span class="writing-source">Zhihu</span><p><a href="https://zhuanlan.zhihu.com/p/78022424" rel="external nofollow noopener" target="_blank">Lower bound for stochastic bandit (in Chinese)</a>  </p>
+</li>
+<li>
+<span class="writing-source">Zhihu</span><p><a href="https://zhuanlan.zhihu.com/p/78024347" rel="external nofollow noopener" target="_blank">Adversarial bandit (in Chinese)</a>  </p>
+</li>
+<li>
+<span class="writing-source">Zhihu</span><p><a href="https://zhuanlan.zhihu.com/p/80952651" rel="external nofollow noopener" target="_blank">UCB2 (in Chinese)</a>  </p>
+</li>
+<li>
+<span class="writing-source">Zhihu</span><p><a href="https://zhuanlan.zhihu.com/p/80955914" rel="external nofollow noopener" target="_blank">Introduction to multi-player MAB and Synchronisation Involves Communiation Algorithm</a>  </p>
+</li>
+<li>
+<span class="writing-source">Zhihu</span><p><a href="https://zhuanlan.zhihu.com/p/80959714" rel="external nofollow noopener" target="_blank">Heterogeneous multi-player MAB</a> </p>
+</li>
+<li>
+<span class="writing-source">Zhihu</span><p><a href="https://zhuanlan.zhihu.com/p/153162569" rel="external nofollow noopener" target="_blank">Experiments of MAB</a>  Also check my research page for the GitHub repository  </p>
+</li>
+</ol>
+</div>
+
+  </article>
+
+  
+
+  
+    
+
+
+  
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->
+    
+
+
+  <footer class="sticky-bottom mt-5" role="contentinfo">
+    
+
+    <div class="container">
+      
+  © Copyright 2026
+  Wei
+  
+  Xiong. Powered by <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a>.
+  
+  
+
+    </div>
+  </footer>
+
+
+
+    <!-- JavaScripts -->
+    <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script>
+
+<!-- Core navigation/runtime scripts -->
+<script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script>
+
+
+
+
+
+  <!-- Charts and Diagrams -->
+  
+
+
+
+
+
+
+
+  <!-- Math and Tikzjax -->
+  
+
+
+
+
+
+
+<!-- Tooltips & popovers runtime -->
+<script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script>
+
+
+
+
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script>
+<script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script>
+<script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script>
+
+<!-- Jupyter Open External Links New Tab -->
+<script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script>
+
+<!-- Badges -->
+
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+
+
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+
+
+
+  <!-- Analytics -->
+  
+
+
+
+
+
+  <!-- Image Features -->
+  
+
+
+
+
+
+
+
+
+
+  <!-- Back to Top -->
+  
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script>
+  
+  <script>
+    addBackToTop();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
