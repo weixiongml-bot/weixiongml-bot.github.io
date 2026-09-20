@@ -1,0 +1,190 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{site.max_width | default: "930px"}}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+// Local presentation adjustments for Wei Xiong's personal site.
+:root {
+  --global-theme-color: #2158a8;
+  --global-hover-color: #174687;
+  --global-text-color: #252b34;
+  --global-text-color-light: #626b78;
+}
+html[data-theme="dark"] {
+  --global-theme-color: #8bb9ff;
+  --global-hover-color: #a4c8ff;
+  --global-text-color: #e4e8ee;
+  --global-text-color-light: #aeb8c5;
+}
+body {
+  font-size: 1rem;
+  line-height: 1.75;
+  font-weight: 400;
+}
+.post-header {
+  margin-bottom: 1.5rem;
+}
+.post-title {
+  letter-spacing: -0.025em;
+}
+.post-header .desc {
+  line-height: 1.8;
+  color: var(--global-text-color-light);
+}
+.profile {
+  margin-left: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.profile img {
+  border-radius: 4px;
+  box-shadow: none;
+}
+.profile-clear {
+  clear: both;
+}
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-bottom: 1.6rem;
+  font-size: 0.95rem;
+}
+.profile-links span {
+  color: var(--global-divider-color);
+}
+.home-content h2,
+.writing-content h2 {
+  margin-top: 2.8rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--global-divider-color);
+  padding-bottom: 0.65rem;
+}
+.home-content h2:first-of-type {
+  margin-top: 2rem;
+}
+.home-content h3 {
+  margin: 1.75rem 0 1rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.home-content p {
+  margin-bottom: 1rem;
+}
+.home-content ol,
+.home-content ul {
+  padding-left: 1.4rem;
+}
+.home-content li {
+  padding-left: 0.2rem;
+  margin-bottom: 0.7rem;
+}
+.home-content li li {
+  margin-bottom: 0.35rem;
+}
+.home-content li p {
+  margin-bottom: 0.3rem;
+}
+.home-content a {
+  text-underline-offset: 0.2em;
+}
+.home-content tt {
+  font-family: inherit;
+  font-size: inherit;
+}
+.writing-list {
+  list-style: none;
+  padding: 0;
+}
+.writing-list li {
+  position: relative;
+  padding: 1.1rem 6rem 1.1rem 0;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+.writing-list li p {
+  margin: 0;
+}
+.writing-list li p:empty {
+  display: none;
+}
+.writing-list li a {
+  display: block;
+  font-weight: 500;
+  font-size: 1.075rem;
+}
+.writing-source {
+  position: absolute;
+  top: 1.3rem;
+  right: 0;
+  font-size: 0.875rem;
+  color: var(--global-text-color-light);
+}
+footer {
+  margin-top: 3rem;
+  font-size: 0.875rem;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 4px;
+}
+@media (max-width: 575px) {
+  body {
+    line-height: 1.65;
+  }
+  .profile {
+    float: none !important;
+    width: 180px;
+    margin: 0 0 1.5rem;
+  }
+  .profile-links {
+    gap: 0.5rem;
+  }
+  .post-title {
+    font-size: 2.5rem;
+  }
+  .home-content h2,
+  .writing-content h2 {
+    margin-top: 2.25rem;
+    font-size: 1.35rem;
+  }
+  .writing-list li {
+    padding-right: 0;
+  }
+  .writing-source {
+    display: block;
+    position: static;
+    margin-bottom: 0.25rem;
+  }
+}
